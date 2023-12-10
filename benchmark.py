@@ -3,6 +3,10 @@ from GameSession import GameSession
 import random
 import json
 
+import os
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+os.chdir(CURRENT_DIR)
+
 def generateRandomSubtring(words: list[str], maxLength: int) -> str:
 
     word = random.choice(words)
@@ -25,14 +29,21 @@ def onGameOver():
 
 if __name__ == "__main__":
 
-    session = GameSession("words10k.txt", onWordFound, onGameOver, 3, 3)
+    WORDS_FILEPATH = os.path.join(CURRENT_DIR, "words10k.txt")
+
+    allAcceptedWords = []
+    with open(WORDS_FILEPATH, "r") as f:
+        allAcceptedWords = f.read().splitlines()
+    
+
+    session = GameSession(WORDS_FILEPATH, onWordFound, onGameOver, 3, 3)
 
     turns = 50
     gameLog = []
     
     for roundNumber in range(turns):
 
-        substring = generateRandomSubtring(session.acceptedWords, 3)
+        substring = generateRandomSubtring(allAcceptedWords, 3)
         session.queryOnSubstring(substring)
         gameLog.append(session.toDict())
 

@@ -50,7 +50,7 @@ def findFirst(substring: str, words: list[str]) -> tuple[int, str]:
 def removeWordAndReset(wordIndex: int, words: list[str], letterWeight: dict[chr, int]):
 
     foundWord = words[wordIndex]
-    words[wordIndex] = '' 
+    words[wordIndex] = ""
 
     for letter in foundWord:
         letterWeight[letter] = 0

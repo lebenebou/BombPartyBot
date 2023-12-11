@@ -29,7 +29,7 @@ def onGameOver():
 
 if __name__ == "__main__":
 
-    WORDS_FILEPATH = os.path.join(CURRENT_DIR, "words10k.txt")
+    WORDS_FILEPATH = os.path.join(CURRENT_DIR, "wordBank", "words10k.txt")
 
     allAcceptedWords = []
     with open(WORDS_FILEPATH, "r") as f:
@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     session = GameSession(WORDS_FILEPATH, onWordFound, onGameOver, 3, 3)
 
-    turns = 50
+    turns = 100
     gameLog = []
     
     for roundNumber in range(turns):
@@ -47,7 +47,7 @@ if __name__ == "__main__":
         session.queryOnSubstring(substring)
         gameLog.append(session.toDict())
 
-    print(f"Played {turns} turns.")
+    print(f"\nPlayed {turns} turns.")
     print(f"Lost {session.lostHearts} hearts.")
     print(f"Refilled hearts {session.heartRefills} times.")
     print(f"Current heart count: {session.hearts}")

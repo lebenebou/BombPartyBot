@@ -10,10 +10,11 @@
 #include <functional>
 #include <algorithm>
 #include <optional>
+#include <filesystem>
 
 class Engine {
 public:
-    static std::vector<std::string> fetchWordsFromFile(const std::string&);
+    static std::vector<std::string> fetchWordsFromFile(std::filesystem::path filename);
     static std::array<int, 26> generateDefaultWeights();
     static std::optional<std::string> playTurn(const std::string&, std::vector<std::string>&, std::array<int, 26>&, std::function<void(const std::string&)>);
 

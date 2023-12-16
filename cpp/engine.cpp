@@ -1,8 +1,10 @@
 
 #include "Engine.hpp"
+#include <filesystem>
 
-std::vector<std::string> Engine::fetchWordsFromFile(const std::string& filename) {
+std::vector<std::string> Engine::fetchWordsFromFile(std::filesystem::path filePath) {
     
+    const std::string filename = filePath.string();
     std::vector<std::string> words;
     std::ifstream file(filename);
 

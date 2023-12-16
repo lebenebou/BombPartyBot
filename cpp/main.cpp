@@ -13,5 +13,7 @@ int main(int argc, char const *argv[])
     auto session = GameSession(wordsFilePath, foundWordCallback, gameOverCallback);
     session.queryOnSubtring("ab");
 
+    std::cout << session.toString() << std::endl;
+
     return 0;
 }

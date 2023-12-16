@@ -66,3 +66,31 @@ double GameSession::averageTurnsPerRefill()
 {
     return (double)turnsPlayed / (double)heartRefills;
 }
+
+std::string GameSession::toString()
+{
+    std::string repr;
+
+    repr += "-- GameSession -- \n";
+    repr += "turn: " + std::to_string(turnsPlayed) + "\n";
+    repr += "query: " + (lastQueriedSubtring.has_value() ? lastQueriedSubtring.value() : "_null_") + "\n";
+    repr += "foundWord: " + (lastFoundWord.has_value() ? lastFoundWord.value() : "_null_") + "\n";
+    repr += "hearts: " + std::to_string(hearts) + "\n";
+
+    std::vector<char> unusedLetters;
+    for(int i = 0; i < letterWeights.size(); ++i)
+        
+        if (letterWeights[i])
+            unusedLetters.push_back('a' + i);
+
+    repr += "unusedLetters: ";
+    for (char letter : unusedLetters)
+        repr += std::string(1, letter) + " ";
+    repr += "\n";
+
+    repr += "heartRefills: " + std::to_string(heartRefills) + "\n";
+    repr += "lostHearts: " + std::to_string(lostHearts) + "\n";
+    repr += "-----------------";
+
+    return repr;
+}

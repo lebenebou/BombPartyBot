@@ -42,6 +42,8 @@ public:
     bool allLettersAreUsed();
     void resetLetterWeights();
     double averageTurnsPerRefill();
+
+    std::string toString();
 };
 
 #endif // GAMESESSION_HPP

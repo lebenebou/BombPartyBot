@@ -1,0 +1,1773 @@
+[
+    {
+        "turn": 1,
+        "lastQueriedSubstring": "ant",
+        "lastFoundWord": "quantitative",
+        "hearts": 3,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "c",
+            "d",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "l",
+            "m",
+            "o",
+            "p",
+            "r",
+            "s",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 2,
+        "lastQueriedSubstring": "sto",
+        "lastFoundWord": "customized",
+        "hearts": 3,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "l",
+            "p",
+            "r",
+            "w",
+            "x",
+            "y"
+        ]
+    },
+    {
+        "turn": 3,
+        "lastQueriedSubstring": "nyo",
+        "lastFoundWord": "canyon",
+        "hearts": 3,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "l",
+            "p",
+            "r",
+            "w",
+            "x"
+        ]
+    },
+    {
+        "turn": 4,
+        "lastQueriedSubstring": "aid",
+        "lastFoundWord": "afraid",
+        "hearts": 3,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "g",
+            "h",
+            "j",
+            "k",
+            "l",
+            "p",
+            "w",
+            "x"
+        ]
+    },
+    {
+        "turn": 5,
+        "lastQueriedSubstring": "ce",
+        "lastFoundWord": "workplace",
+        "hearts": 3,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "g",
+            "h",
+            "j",
+            "x"
+        ]
+    },
+    {
+        "turn": 6,
+        "lastQueriedSubstring": "se",
+        "lastFoundWord": "joseph",
+        "hearts": 3,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "g",
+            "x"
+        ]
+    },
+    {
+        "turn": 7,
+        "lastQueriedSubstring": "ee",
+        "lastFoundWord": "breeding",
+        "hearts": 3,
+        "refillCount": 0,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 8,
+        "lastQueriedSubstring": "ucy",
+        "lastFoundWord": "lucy",
+        "hearts": 3,
+        "refillCount": 0,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 9,
+        "lastQueriedSubstring": "ti",
+        "lastFoundWord": "exhibitions",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 10,
+        "lastQueriedSubstring": "evi",
+        "lastFoundWord": "achieving",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "b",
+            "d",
+            "f",
+            "j",
+            "k",
+            "l",
+            "m",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 11,
+        "lastQueriedSubstring": "ze",
+        "lastFoundWord": "switzerland",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "b",
+            "f",
+            "j",
+            "k",
+            "m",
+            "o",
+            "p",
+            "q",
+            "u",
+            "x",
+            "y"
+        ]
+    },
+    {
+        "turn": 12,
+        "lastQueriedSubstring": "el",
+        "lastFoundWord": "jewelry",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "b",
+            "f",
+            "k",
+            "m",
+            "o",
+            "p",
+            "q",
+            "u",
+            "x"
+        ]
+    },
+    {
+        "turn": 13,
+        "lastQueriedSubstring": "ngo",
+        "lastFoundWord": "bingo",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "f",
+            "k",
+            "m",
+            "p",
+            "q",
+            "u",
+            "x"
+        ]
+    },
+    {
+        "turn": 14,
+        "lastQueriedSubstring": "an",
+        "lastFoundWord": "quantum",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "f",
+            "k",
+            "p",
+            "x"
+        ]
+    },
+    {
+        "turn": 15,
+        "lastQueriedSubstring": "cra",
+        "lastFoundWord": "crafts",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "k",
+            "p",
+            "x"
+        ]
+    },
+    {
+        "turn": 16,
+        "lastQueriedSubstring": "std",
+        "lastFoundWord": "std",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "k",
+            "p",
+            "x"
+        ]
+    },
+    {
+        "turn": 17,
+        "lastQueriedSubstring": "le",
+        "lastFoundWord": "complexity",
+        "hearts": 3,
+        "refillCount": 1,
+        "unusedLetters": [
+            "k"
+        ]
+    },
+    {
+        "turn": 18,
+        "lastQueriedSubstring": "ere",
+        "lastFoundWord": "derek",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 19,
+        "lastQueriedSubstring": "in",
+        "lastFoundWord": "permalink",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "b",
+            "c",
+            "d",
+            "f",
+            "g",
+            "h",
+            "j",
+            "o",
+            "q",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 20,
+        "lastQueriedSubstring": "ak",
+        "lastFoundWord": "earthquake",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "b",
+            "c",
+            "d",
+            "f",
+            "g",
+            "j",
+            "o",
+            "s",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 21,
+        "lastQueriedSubstring": "eds",
+        "lastFoundWord": "proceeds",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "b",
+            "f",
+            "g",
+            "j",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 22,
+        "lastQueriedSubstring": "oo",
+        "lastFoundWord": "hollywood",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "b",
+            "f",
+            "g",
+            "j",
+            "v",
+            "x",
+            "z"
+        ]
+    },
+    {
+        "turn": 23,
+        "lastQueriedSubstring": "pa",
+        "lastFoundWord": "tripadvisor",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "b",
+            "f",
+            "g",
+            "j",
+            "x",
+            "z"
+        ]
+    },
+    {
+        "turn": 24,
+        "lastQueriedSubstring": "st",
+        "lastFoundWord": "adjustable",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "f",
+            "g",
+            "x",
+            "z"
+        ]
+    },
+    {
+        "turn": 25,
+        "lastQueriedSubstring": "er",
+        "lastFoundWord": "organizer",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "f",
+            "x"
+        ]
+    },
+    {
+        "turn": 26,
+        "lastQueriedSubstring": "ui",
+        "lastFoundWord": "fruits",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 27,
+        "lastQueriedSubstring": "tit",
+        "lastFoundWord": "acdbentity",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 28,
+        "lastQueriedSubstring": "sd",
+        "lastFoundWord": "freebsd",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 29,
+        "lastQueriedSubstring": "onf",
+        "lastFoundWord": "configured",
+        "hearts": 3,
+        "refillCount": 2,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 30,
+        "lastQueriedSubstring": "me",
+        "lastFoundWord": "extremely",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 31,
+        "lastQueriedSubstring": "ro",
+        "lastFoundWord": "approximately",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "b",
+            "c",
+            "d",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "n",
+            "q",
+            "s",
+            "u",
+            "v",
+            "w",
+            "z"
+        ]
+    },
+    {
+        "turn": 32,
+        "lastQueriedSubstring": "his",
+        "lastFoundWord": "franchise",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "b",
+            "d",
+            "g",
+            "j",
+            "k",
+            "q",
+            "u",
+            "v",
+            "w",
+            "z"
+        ]
+    },
+    {
+        "turn": 33,
+        "lastQueriedSubstring": "oen",
+        "lastFoundWord": "phoenix",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "b",
+            "d",
+            "g",
+            "j",
+            "k",
+            "q",
+            "u",
+            "v",
+            "w",
+            "z"
+        ]
+    },
+    {
+        "turn": 34,
+        "lastQueriedSubstring": "mid",
+        "lastFoundWord": "midwest",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "b",
+            "g",
+            "j",
+            "k",
+            "q",
+            "u",
+            "v",
+            "z"
+        ]
+    },
+    {
+        "turn": 35,
+        "lastQueriedSubstring": "ra",
+        "lastFoundWord": "beverages",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "j",
+            "k",
+            "q",
+            "u",
+            "z"
+        ]
+    },
+    {
+        "turn": 36,
+        "lastQueriedSubstring": "cal",
+        "lastFoundWord": "surgical",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "j",
+            "k",
+            "q",
+            "z"
+        ]
+    },
+    {
+        "turn": 37,
+        "lastQueriedSubstring": "ing",
+        "lastFoundWord": "requesting",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "j",
+            "k",
+            "z"
+        ]
+    },
+    {
+        "turn": 38,
+        "lastQueriedSubstring": "tin",
+        "lastFoundWord": "justin",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "k",
+            "z"
+        ]
+    },
+    {
+        "turn": 39,
+        "lastQueriedSubstring": "end",
+        "lastFoundWord": "weekends",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 40,
+        "lastQueriedSubstring": "nfl",
+        "lastFoundWord": "influenced",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 41,
+        "lastQueriedSubstring": "rin",
+        "lastFoundWord": "drinking",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 42,
+        "lastQueriedSubstring": "ose",
+        "lastFoundWord": "jose",
+        "hearts": 3,
+        "refillCount": 3,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 43,
+        "lastQueriedSubstring": "ops",
+        "lastFoundWord": "zshops",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 44,
+        "lastQueriedSubstring": "ed",
+        "lastFoundWord": "authorized",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "b",
+            "c",
+            "f",
+            "g",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "p",
+            "q",
+            "s",
+            "v",
+            "w",
+            "x",
+            "y"
+        ]
+    },
+    {
+        "turn": 45,
+        "lastQueriedSubstring": "nes",
+        "lastFoundWord": "wednesday",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "b",
+            "c",
+            "f",
+            "g",
+            "j",
+            "k",
+            "l",
+            "m",
+            "p",
+            "q",
+            "v",
+            "x"
+        ]
+    },
+    {
+        "turn": 46,
+        "lastQueriedSubstring": "hip",
+        "lastFoundWord": "fellowship",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "b",
+            "c",
+            "g",
+            "j",
+            "k",
+            "m",
+            "q",
+            "v",
+            "x"
+        ]
+    },
+    {
+        "turn": 47,
+        "lastQueriedSubstring": "sil",
+        "lastFoundWord": "silver",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "b",
+            "c",
+            "g",
+            "j",
+            "k",
+            "m",
+            "q",
+            "x"
+        ]
+    },
+    {
+        "turn": 48,
+        "lastQueriedSubstring": "rre",
+        "lastFoundWord": "corresponding",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "b",
+            "j",
+            "k",
+            "m",
+            "q",
+            "x"
+        ]
+    },
+    {
+        "turn": 49,
+        "lastQueriedSubstring": "ot",
+        "lastFoundWord": "quotations",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "b",
+            "j",
+            "k",
+            "m",
+            "x"
+        ]
+    },
+    {
+        "turn": 50,
+        "lastQueriedSubstring": "fer",
+        "lastFoundWord": "jefferson",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "b",
+            "k",
+            "m",
+            "x"
+        ]
+    },
+    {
+        "turn": 51,
+        "lastQueriedSubstring": "as",
+        "lastFoundWord": "masturbating",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "k",
+            "x"
+        ]
+    },
+    {
+        "turn": 52,
+        "lastQueriedSubstring": "yn",
+        "lastFoundWord": "brooklyn",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 53,
+        "lastQueriedSubstring": "ean",
+        "lastFoundWord": "korean",
+        "hearts": 3,
+        "refillCount": 4,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 54,
+        "lastQueriedSubstring": "ion",
+        "lastFoundWord": "exemption",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 55,
+        "lastQueriedSubstring": "ne",
+        "lastFoundWord": "examined",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "b",
+            "c",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "l",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 56,
+        "lastQueriedSubstring": "ic",
+        "lastFoundWord": "viewpicture",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "b",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "l",
+            "o",
+            "q",
+            "s",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 57,
+        "lastQueriedSubstring": "ip",
+        "lastFoundWord": "javascript",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "b",
+            "f",
+            "g",
+            "h",
+            "k",
+            "l",
+            "o",
+            "q",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 58,
+        "lastQueriedSubstring": "roc",
+        "lastFoundWord": "rocky",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "b",
+            "f",
+            "g",
+            "h",
+            "l",
+            "q",
+            "z"
+        ]
+    },
+    {
+        "turn": 59,
+        "lastQueriedSubstring": "at",
+        "lastFoundWord": "qualifications",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "b",
+            "g",
+            "h",
+            "z"
+        ]
+    },
+    {
+        "turn": 60,
+        "lastQueriedSubstring": "ors",
+        "lastFoundWord": "neighbors",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 61,
+        "lastQueriedSubstring": "uly",
+        "lastFoundWord": "july",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 62,
+        "lastQueriedSubstring": "col",
+        "lastFoundWord": "pharmacology",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 63,
+        "lastQueriedSubstring": "by",
+        "lastFoundWord": "hobby",
+        "hearts": 3,
+        "refillCount": 5,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 64,
+        "lastQueriedSubstring": "er",
+        "lastFoundWord": "azerbaijan",
+        "hearts": 3,
+        "refillCount": 6,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 65,
+        "lastQueriedSubstring": "jun",
+        "lastFoundWord": "jungle",
+        "hearts": 3,
+        "refillCount": 6,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "f",
+            "h",
+            "i",
+            "k",
+            "m",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 66,
+        "lastQueriedSubstring": "ton",
+        "lastFoundWord": "washington",
+        "hearts": 3,
+        "refillCount": 6,
+        "unusedLetters": [
+            "b",
+            "c",
+            "d",
+            "f",
+            "k",
+            "m",
+            "p",
+            "q",
+            "r",
+            "v",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 67,
+        "lastQueriedSubstring": "fil",
+        "lastFoundWord": "profiles",
+        "hearts": 3,
+        "refillCount": 6,
+        "unusedLetters": [
+            "b",
+            "c",
+            "d",
+            "k",
+            "m",
+            "q",
+            "v",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 68,
+        "lastQueriedSubstring": "th",
+        "lastFoundWord": "everything",
+        "hearts": 3,
+        "refillCount": 6,
+        "unusedLetters": [
+            "b",
+            "c",
+            "d",
+            "k",
+            "m",
+            "q",
+            "x",
+            "z"
+        ]
+    },
+    {
+        "turn": 69,
+        "lastQueriedSubstring": "rr",
+        "lastFoundWord": "bizarre",
+        "hearts": 3,
+        "refillCount": 6,
+        "unusedLetters": [
+            "c",
+            "d",
+            "k",
+            "m",
+            "q",
+            "x"
+        ]
+    },
+    {
+        "turn": 70,
+        "lastQueriedSubstring": "ch",
+        "lastFoundWord": "techniques",
+        "hearts": 3,
+        "refillCount": 6,
+        "unusedLetters": [
+            "d",
+            "k",
+            "m",
+            "x"
+        ]
+    },
+    {
+        "turn": 71,
+        "lastQueriedSubstring": "ot",
+        "lastFoundWord": "dakota",
+        "hearts": 3,
+        "refillCount": 6,
+        "unusedLetters": [
+            "m",
+            "x"
+        ]
+    },
+    {
+        "turn": 72,
+        "lastQueriedSubstring": "re",
+        "lastFoundWord": "mixture",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 73,
+        "lastQueriedSubstring": "ay",
+        "lastFoundWord": "raymond",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "b",
+            "c",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "p",
+            "q",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "z"
+        ]
+    },
+    {
+        "turn": 74,
+        "lastQueriedSubstring": "mem",
+        "lastFoundWord": "membership",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "c",
+            "f",
+            "g",
+            "j",
+            "k",
+            "l",
+            "q",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "z"
+        ]
+    },
+    {
+        "turn": 75,
+        "lastQueriedSubstring": "ute",
+        "lastFoundWord": "executed",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "f",
+            "g",
+            "j",
+            "k",
+            "l",
+            "q",
+            "v",
+            "w",
+            "z"
+        ]
+    },
+    {
+        "turn": 76,
+        "lastQueriedSubstring": "ex",
+        "lastFoundWord": "exclusively",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "f",
+            "g",
+            "j",
+            "k",
+            "q",
+            "w",
+            "z"
+        ]
+    },
+    {
+        "turn": 77,
+        "lastQueriedSubstring": "mpa",
+        "lastFoundWord": "compaq",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "f",
+            "g",
+            "j",
+            "k",
+            "w",
+            "z"
+        ]
+    },
+    {
+        "turn": 78,
+        "lastQueriedSubstring": "ni",
+        "lastFoundWord": "jennifer",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "g",
+            "k",
+            "w",
+            "z"
+        ]
+    },
+    {
+        "turn": 79,
+        "lastQueriedSubstring": "odd",
+        "lastFoundWord": "todd",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "g",
+            "k",
+            "w",
+            "z"
+        ]
+    },
+    {
+        "turn": 80,
+        "lastQueriedSubstring": "en",
+        "lastFoundWord": "volkswagen",
+        "hearts": 3,
+        "refillCount": 7,
+        "unusedLetters": [
+            "z"
+        ]
+    },
+    {
+        "turn": 81,
+        "lastQueriedSubstring": "in",
+        "lastFoundWord": "magazines",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 82,
+        "lastQueriedSubstring": "ck",
+        "lastFoundWord": "acknowledge",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "b",
+            "f",
+            "h",
+            "i",
+            "j",
+            "m",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 83,
+        "lastQueriedSubstring": "ten",
+        "lastFoundWord": "extensive",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "b",
+            "f",
+            "h",
+            "j",
+            "m",
+            "p",
+            "q",
+            "r",
+            "u",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 84,
+        "lastQueriedSubstring": "su",
+        "lastFoundWord": "subsequently",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "f",
+            "h",
+            "j",
+            "m",
+            "p",
+            "r",
+            "z"
+        ]
+    },
+    {
+        "turn": 85,
+        "lastQueriedSubstring": "nic",
+        "lastFoundWord": "polyphonic",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "f",
+            "j",
+            "m",
+            "r",
+            "z"
+        ]
+    },
+    {
+        "turn": 86,
+        "lastQueriedSubstring": "bo",
+        "lastFoundWord": "luxembourg",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "f",
+            "j",
+            "z"
+        ]
+    },
+    {
+        "turn": 87,
+        "lastQueriedSubstring": "mi",
+        "lastFoundWord": "benjamin",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "f",
+            "z"
+        ]
+    },
+    {
+        "turn": 88,
+        "lastQueriedSubstring": "nic",
+        "lastFoundWord": "municipal",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "f",
+            "z"
+        ]
+    },
+    {
+        "turn": 89,
+        "lastQueriedSubstring": "re",
+        "lastFoundWord": "recognized",
+        "hearts": 3,
+        "refillCount": 8,
+        "unusedLetters": [
+            "f"
+        ]
+    },
+    {
+        "turn": 90,
+        "lastQueriedSubstring": "enc",
+        "lastFoundWord": "preferences",
+        "hearts": 3,
+        "refillCount": 9,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 91,
+        "lastQueriedSubstring": "ca",
+        "lastFoundWord": "carefully",
+        "hearts": 3,
+        "refillCount": 9,
+        "unusedLetters": [
+            "b",
+            "d",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "s",
+            "t",
+            "v",
+            "w",
+            "x",
+            "z"
+        ]
+    },
+    {
+        "turn": 92,
+        "lastQueriedSubstring": "ab",
+        "lastFoundWord": "zimbabwe",
+        "hearts": 3,
+        "refillCount": 9,
+        "unusedLetters": [
+            "d",
+            "g",
+            "h",
+            "j",
+            "k",
+            "n",
+            "o",
+            "p",
+            "q",
+            "s",
+            "t",
+            "v",
+            "x"
+        ]
+    },
+    {
+        "turn": 93,
+        "lastQueriedSubstring": "ot",
+        "lastFoundWord": "voting",
+        "hearts": 3,
+        "refillCount": 9,
+        "unusedLetters": [
+            "d",
+            "h",
+            "j",
+            "k",
+            "p",
+            "q",
+            "s",
+            "x"
+        ]
+    },
+    {
+        "turn": 94,
+        "lastQueriedSubstring": "tc",
+        "lastFoundWord": "dispatched",
+        "hearts": 3,
+        "refillCount": 9,
+        "unusedLetters": [
+            "j",
+            "k",
+            "q",
+            "x"
+        ]
+    },
+    {
+        "turn": 95,
+        "lastQueriedSubstring": "ati",
+        "lastFoundWord": "equations",
+        "hearts": 3,
+        "refillCount": 9,
+        "unusedLetters": [
+            "j",
+            "k",
+            "x"
+        ]
+    },
+    {
+        "turn": 96,
+        "lastQueriedSubstring": "gi",
+        "lastFoundWord": "thanksgiving",
+        "hearts": 3,
+        "refillCount": 9,
+        "unusedLetters": [
+            "j",
+            "x"
+        ]
+    },
+    {
+        "turn": 97,
+        "lastQueriedSubstring": "nd",
+        "lastFoundWord": "handjob",
+        "hearts": 3,
+        "refillCount": 9,
+        "unusedLetters": [
+            "x"
+        ]
+    },
+    {
+        "turn": 98,
+        "lastQueriedSubstring": "",
+        "lastFoundWord": "textbooks",
+        "hearts": 3,
+        "refillCount": 10,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 99,
+        "lastQueriedSubstring": "men",
+        "lastFoundWord": "experiments",
+        "hearts": 3,
+        "refillCount": 10,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "l",
+            "o",
+            "q",
+            "u",
+            "v",
+            "w",
+            "y",
+            "z"
+        ]
+    },
+    {
+        "turn": 100,
+        "lastQueriedSubstring": "nly",
+        "lastFoundWord": "suddenly",
+        "hearts": 3,
+        "refillCount": 10,
+        "unusedLetters": [
+            "a",
+            "b",
+            "c",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "o",
+            "q",
+            "v",
+            "w",
+            "z"
+        ]
+    }
+]

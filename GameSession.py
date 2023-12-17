@@ -1,42 +1,55 @@
 
-import engine
+from engine import Engine 
 
 class GameSession:
 
-    def __init__(self, wordsFilePath: str, foundWordCallback, gameOverCallback, startingHearts: int = 3, maxHearts: int = 3):
+    def __init__(self, acceptedWords: list[str], foundWordCallback, gameOverCallback, startingHearts: int = 3, maxHearts: int = 3):
         
-        self.letterWeights = engine.generateDefaultWeights()
-        self.acceptedWords = engine.getWordsFromFile(wordsFilePath)
-        self.maxHearts = maxHearts
+        self.acceptedWords = acceptedWords
+
+        self.originalLetterWeights = self.generateLetterWeights()
+        self.letterWeights = self.generateLetterWeights()
 
         self.foundWordCallback = foundWordCallback
         self.gameOverCallback = gameOverCallback
 
-        self.turnsPlayed = 0
-        self.lastFoundWord = None
-        self.lastQueriedSubstring = None
         self.hearts = startingHearts
-        self.heartRefills = 0
+        self.maxHearts = maxHearts
         self.lostHearts = 0
 
+        self.lastFoundWord = None
+        self.lastQueriedSubstring = None
 
+        self.turnsPlayed = 0
+        self.heartRefills = 0
+
+    def generateLetterWeights(self) -> dict[chr, int]:
+
+        letterWeight = {}
+        for order in range(97, 97 + 26):
+            letterWeight[chr(order)] = 1
+        
+        rareLetterWeight = {
+            'j':7, 'v':7, 'q':7, 'w':5, 'y':5, 'z':5
+        }
+    
+        letterWeight.update(rareLetterWeight)
+        return letterWeight
+    
     def allLettersAreUsed(self) -> bool:
-
         return not any(self.letterWeights.values())
 
     def resetLetterWeights(self):
-
-        self.letterWeights = engine.generateDefaultWeights()
+        self.letterWeights = dict(self.originalLetterWeights)
     
     def averageTurnsPerRefill(self) -> float:
-
         return self.turnsPlayed / self.heartRefills
     
     def queryOnSubstring(self, substring: str) -> str:
         
         self.lastQueriedSubstring = substring
         self.turnsPlayed += 1
-        self.lastFoundWord = engine.playTurn(substring, self.acceptedWords, self.letterWeights, self.foundWordCallback)
+        self.lastFoundWord = Engine.playTurn(substring, self.acceptedWords, self.letterWeights, self.foundWordCallback)
 
         if self.lastFoundWord == None:
 

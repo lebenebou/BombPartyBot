@@ -1,5 +1,6 @@
 
 from GameSession import GameSession
+
 import random
 import json
 
@@ -20,30 +21,27 @@ def generateRandomSubtring(words: list[str], maxLength: int) -> str:
     return word[startIndex:endIndex]
 
 def onWordFound(word: str):
-
     pass
 
 def onGameOver():
-
     pass
 
 if __name__ == "__main__":
 
     WORDS_FILEPATH = os.path.join(CURRENT_DIR, "wordBank", "words10k.txt")
 
-    allAcceptedWords = []
+    acceptedWords = []
     with open(WORDS_FILEPATH, "r") as f:
-        allAcceptedWords = f.read().splitlines()
+        acceptedWords = f.read().splitlines()
     
-
-    session = GameSession(WORDS_FILEPATH, onWordFound, onGameOver, 3, 3)
+    session = GameSession(acceptedWords, onWordFound, onGameOver, 3, 3)
 
     turns = 100
-    gameLog = []
+    gameLog: list[dict] = []
     
     for roundNumber in range(turns):
 
-        substring = generateRandomSubtring(allAcceptedWords, 3)
+        substring = generateRandomSubtring(acceptedWords, 3)
         session.queryOnSubstring(substring)
         gameLog.append(session.toDict())
 

@@ -10,6 +10,8 @@ class GameSession:
         self.originalLetterWeights = self.__generateLetterWeights()
         self.letterWeights = self.__generateLetterWeights()
 
+        Engine.sortWords(self.acceptedWords, self.letterWeights)
+
         self.foundWordCallback = foundWordCallback
         self.gameOverCallback = gameOverCallback
 

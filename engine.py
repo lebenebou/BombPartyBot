@@ -29,6 +29,10 @@ class Engine:
                 return (index, word)
 
         return (-1, "")
+
+    @staticmethod
+    def sortWords(words: list[str], letterWeight: dict[chr, int]):
+        words.sort(key=lambda word: Engine.__assignValue(word, letterWeight), reverse=True)
             
     @staticmethod
     def __removeWordAndReset(wordIndex: int, words: list[str], letterWeight: dict[chr, int]):
@@ -39,7 +43,7 @@ class Engine:
         for letter in foundWord:
             letterWeight[letter] = 0
 
-        words.sort(key=lambda word: Engine.__assignValue(word, letterWeight), reverse=True)
+        Engine.sortWords(words, letterWeight)
 
     @staticmethod
     def playTurn(subtring: str, words: list[str], letterWeight: dict[chr, int], processWordCallback) -> str:

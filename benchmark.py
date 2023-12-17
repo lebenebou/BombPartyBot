@@ -28,7 +28,7 @@ def onGameOver():
 
 if __name__ == "__main__":
 
-    WORDS_FILEPATH = os.path.join(CURRENT_DIR, "wordBank", "words10k.txt")
+    WORDS_FILEPATH = os.path.join(CURRENT_DIR, "wordBank", "words60k.txt")
 
     acceptedWords = []
     with open(WORDS_FILEPATH, "r") as f:

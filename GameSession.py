@@ -7,8 +7,8 @@ class GameSession:
         
         self.acceptedWords = acceptedWords
 
-        self.originalLetterWeights = self.generateLetterWeights()
-        self.letterWeights = self.generateLetterWeights()
+        self.originalLetterWeights = self.__generateLetterWeights()
+        self.letterWeights = self.__generateLetterWeights()
 
         self.foundWordCallback = foundWordCallback
         self.gameOverCallback = gameOverCallback
@@ -23,7 +23,7 @@ class GameSession:
         self.turnsPlayed = 0
         self.heartRefills = 0
 
-    def generateLetterWeights(self) -> dict[chr, int]:
+    def __generateLetterWeights(self) -> dict[chr, int]:
 
         letterWeight = {}
         for order in range(97, 97 + 26):
@@ -36,10 +36,10 @@ class GameSession:
         letterWeight.update(rareLetterWeight)
         return letterWeight
     
-    def allLettersAreUsed(self) -> bool:
+    def __allLettersAreUsed(self) -> bool:
         return not any(self.letterWeights.values())
 
-    def resetLetterWeights(self):
+    def __resetLetterWeights(self):
         self.letterWeights = dict(self.originalLetterWeights)
     
     def averageTurnsPerRefill(self) -> float:
@@ -61,9 +61,9 @@ class GameSession:
 
             return None
 
-        if self.allLettersAreUsed():
+        if self.__allLettersAreUsed():
 
-            self.resetLetterWeights()
+            self.__resetLetterWeights()
             self.heartRefills += 1
             self.hearts = min(self.hearts + 1, self.maxHearts)
 

@@ -36,6 +36,9 @@ class GameSession:
         }
     
         letterWeight.update(rareLetterWeight)
+        letterWeight['x'] = 0
+        letterWeight['z'] = 0
+
         return letterWeight
     
     def __allLettersAreUsed(self) -> bool:

@@ -80,7 +80,7 @@ if __name__ == "__main__":
         substring: str = input("Enter the substring: ").replace(" ", "")
 
         if substring == ":q":
-            safeExit()
+            safeExit(invalidWords)
         
         if substring == ":r":
             reset(session)

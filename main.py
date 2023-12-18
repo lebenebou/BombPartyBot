@@ -32,12 +32,8 @@ def saveInvalidWords(invalidWords: list[str]):
 def safeExit(invalidWords: list[str]):
 
     saveInvalidWords(invalidWords)
-    exit(0)
-
-def reset(session: GameSession):
-
-    session = GameSession(acceptedWords, handleFoundWord, doNothing, 3, 3)
     os.system("cls")
+    exit(0)
 
 def showSessionInfo(session: GameSession):
 
@@ -57,6 +53,23 @@ def showSessionInfo(session: GameSession):
 
     print("\n")
 
+def handleCommand(command: str, session: GameSession, invalidWords: list[str]):
+
+    if command == ":w":
+        saveInvalidWords(invalidWords)
+        return
+
+    if command == ":r":
+        # session.reset()
+        return
+
+    if command == ":q":
+        safeExit(invalidWords)
+        return
+
+    os.system("cls")
+    input("Invalid command, press enter to continue...")
+
 if __name__ == "__main__":
 
     CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -72,18 +85,21 @@ if __name__ == "__main__":
     invalidWords = []
 
     os.system("cls")
+    firstRun = True
 
     while(True):
 
-        showSessionInfo(session)
+        if not firstRun:
+            showSessionInfo(session)
 
-        substring: str = input("Enter the substring: ").replace(" ", "")
+        firstRun = False
 
-        if substring == ":q":
-            safeExit(invalidWords)
-        
-        if substring == ":r":
-            reset(session)
+        substring: str = input("Enter substring or command: ").replace(" ", "")
+
+        if substring.startswith(":"):
+
+            handleCommand(substring, session, invalidWords)
+            os.system("cls")
             continue
 
         if substring == session.lastQueriedSubstring:

@@ -1,10 +1,12 @@
 
-import os
-import json
+import sys
+sys.path.append("..")
 
+import os
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_WEIGHTS_FILE = os.path.join(CURRENT_DIR, "defaultLetterWeights.json")
 
+import json
 def getDefaultLetterWeights() -> dict[chr, int]:
 
     with open(DEFAULT_WEIGHTS_FILE) as f:
@@ -13,7 +15,7 @@ def getDefaultLetterWeights() -> dict[chr, int]:
 class BombPartyEngine:
 
 # PUBLIC
-    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
+    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = lambda word: None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
 
         self.acceptedWords: list[str] = acceptedWords
 
@@ -21,6 +23,8 @@ class BombPartyEngine:
             self.letterWeights:dict[chr, int] = getDefaultLetterWeights()
         else:
             self.letterWeights:dict[chr, int] = letterWeights
+
+        self.originalLetterWeights = self.letterWeights.copy()
 
         self.turnsPlayed = 0
         self.hearts: int = startingHearts
@@ -41,7 +45,32 @@ class BombPartyEngine:
         return self.turnsPlayed / self.heartRefills
 
     def queryOnSubstring(self, substring: str) -> str:
-        raise NotImplementedError("This is an abstract method, please use a subclass")
+        
+        foundWord = self._quickFind(substring)
+        self.foundWordCallback(foundWord)
+
+        self.turnsPlayed += 1
+        self.lastFoundWord = foundWord
+        self.lastQueriedSubstring = substring
+
+        if foundWord is None:
+
+            self.hearts -= 1
+            self.lostHearts += 1
+
+            if self.hearts == 0:
+                self.gameOverCallback()
+
+            return None
+
+        if self._allLettersAreUsed():
+
+            self.hearts = min(self.hearts + 1, self.maxHearts)
+            self.heartRefills += 1
+            self._resetLetterWeights()
+
+        self._rebalance()
+        return foundWord
 
     def toDict(self) -> dict:
 
@@ -55,5 +84,18 @@ class BombPartyEngine:
         }
 
 # PRIVATE
-    def __allLettersAreUsed(self) -> bool:
+    def _assignValue(self, word: str) -> int:
+        # return the sum of the disctinct letters' weights
+        return sum([self.letterWeights[letter] for letter in set(word)])
+
+    def _allLettersAreUsed(self) -> bool:
         return not any(self.letterWeights.values())
+
+    def _resetLetterWeights(self):
+        self.letterWeights = self.originalLetterWeights
+
+    def _quickFind(self, subtring: str) -> str:
+        raise NotImplementedError("This is a virtual method. Please override it.")
+
+    def _rebalance(self):
+        raise NotImplementedError("This is a virtual method. Please override it.")

@@ -10,7 +10,7 @@ class Prioritizer(BombPartyEngine):
         self.lastFoundWordIndex = -1
         self._rebalance()
         
-# PRIVATE
+# PROTECTED
     # Override
     def _rebalance(self):
 

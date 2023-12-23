@@ -1,4 +1,6 @@
 
+import time
+
 import sys
 sys.path.append("..")
 
@@ -46,7 +48,10 @@ class BombPartyEngine:
 
     def queryOnSubstring(self, substring: str) -> str:
         
+        timerStart = time.time()
         foundWord = self._quickFind(substring)
+        self.lastResponseTimeMs = (time.time() - timerStart) * 1000
+
         self.foundWordCallback(foundWord)
 
         self.turnsPlayed += 1
@@ -83,7 +88,7 @@ class BombPartyEngine:
             "unusedLetters": [letter for letter in self.letterWeights if self.letterWeights[letter] > 0],
         }
 
-# PRIVATE
+# PROTECTED
     def _assignValue(self, word: str) -> int:
         # return the sum of the disctinct letters' weights
         return sum([self.letterWeights[letter] for letter in set(word)])

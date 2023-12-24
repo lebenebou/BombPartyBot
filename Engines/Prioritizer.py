@@ -7,8 +7,16 @@ class Prioritizer(BombPartyEngine):
     def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = lambda word: None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
 
         super().__init__(acceptedWords, foundWordCallback, gameOverCallback, letterWeights, startingHearts, maxHearts)
+
+        self.lastFoundWordIndex: int = -1
+        self.__prioritizeWords()
+
+    # Override
+    def reset(self):
+
+        super().reset()
         self.lastFoundWordIndex = -1
-        self._rebalance()
+        self.__prioritizeWords()
         
 # PROTECTED
     # Override
@@ -34,3 +42,7 @@ class Prioritizer(BombPartyEngine):
         
         while len(self.acceptedWords) > 0 and self.acceptedWords[-1] == "":
             self.acceptedWords.pop()
+
+# PRIVATE
+    def __prioritizeWords(self):
+        self.acceptedWords.sort(key=lambda word: self._assignValue(word), reverse=True)

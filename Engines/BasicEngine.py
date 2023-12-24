@@ -12,7 +12,13 @@ class BasicEngine(BombPartyEngine):
         
         super().__init__(acceptedWords, foundWordCallback, gameOverCallback, letterWeights, startingHearts, maxHearts)
         self.usedWords = set()
-        
+
+    # Override
+    def reset(self):
+
+        super().reset()
+        self.usedWords.clear()
+
 # PROTECTED
     # Override
     def _quickFind(self, substring: str) -> str:

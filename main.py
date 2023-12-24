@@ -3,9 +3,40 @@ import os
 import sys
 sys.path.append("./Engines")
 
+from Engines.BombPartyEngine import BombPartyEngine
 from Engines.Prioritizer import Prioritizer
-from Engines.SubstringMapper import SubstringMapper
-from Engines.BasicEngine import BasicEngine
+
+import pyautogui
+
+def FocusChromeAndInputWord(word: str):
+
+    pyautogui.hotkey("win", "4")
+    pyautogui.typewrite(word, interval=0.1)
+    pyautogui.press("enter")
+    pyautogui.hotkey("alt", "tab")
+
+def safeExit():
+    exit(0)
+
+def handleCommand(command: str, engine: BombPartyEngine):
+
+    command = command.strip(":")
+
+    if command == "q":
+        safeExit()
+        return
+
+    elif command == "r":
+        engine.reset()
+        return
+
+    elif command.startswith("h"):
+        engine.hearts = int(command[1])
+        return
+
+    elif command.startswith("m"):
+        engine.maxHearts = int(command[1])
+        return
 
 if __name__=="__main__":
 
@@ -16,21 +47,22 @@ if __name__=="__main__":
     with open(WORDS_FILE) as f:
         words = f.read().splitlines()
 
-    callback = lambda word : print(f"Found word: {word}")
-    substring = "au"
+    engine = Prioritizer(words, FocusChromeAndInputWord)
 
-    prioritizer = Prioritizer(words, callback)
-    prioritizer.queryOnSubstring(substring)
-    print(f"Found in {prioritizer.lastResponseTimeMs} ms")
+    while True:
 
-    print()
+        os.system("cls")
 
-    mapper = SubstringMapper(words, callback)
-    mapper.queryOnSubstring(substring)
-    print(f"Found in {mapper.lastResponseTimeMs} ms")
+        if engine.lastFoundWord is not None:
+            print(f"Found word: {engine.lastFoundWord}")
 
-    print()
+        print("".join(engine.unusedLetters()), end="\n\n")
 
-    basic = BasicEngine(words, callback)
-    mapper.queryOnSubstring(substring)
-    print(f"Found in {mapper.lastResponseTimeMs} ms")
+        substring = input("Enter substring or command: ").strip().lower()
+
+        if substring.startswith(":"):
+
+            handleCommand(substring, engine)
+            continue
+
+        engine.queryOnSubstring(substring)

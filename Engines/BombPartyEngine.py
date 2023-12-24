@@ -1,5 +1,6 @@
 
 import time
+from copy import deepcopy
 
 import sys
 sys.path.append("..")
@@ -26,14 +27,14 @@ class BombPartyEngine:
         else:
             self.letterWeights:dict[chr, int] = letterWeights
 
-        self.originalLetterWeights = self.letterWeights.copy()
+        self.originalLetterWeights: dict[chr, int] = self.letterWeights.copy()
 
         self.turnsPlayed = 0
         self.hearts: int = startingHearts
         self.maxHearts: int = maxHearts
 
-        self.heartRefills = 0
-        self.lostHearts = 0
+        self.heartRefills: int = 0
+        self.lostHearts: int = 0
 
         self.foundWordCallback: callable = foundWordCallback
         self.gameOverCallback: callable = gameOverCallback
@@ -42,10 +43,13 @@ class BombPartyEngine:
         self.lastQueriedSubstring: str = None
         self.lastResponseTimeMs: float = 0
 
-        self._initialState = self.__dict__.copy()
+        self._initialState = deepcopy(self.__dict__)
 
     def reset(self):
-        self.__dict__ = self._initialState.copy()
+        self.__dict__.update(deepcopy(self._initialState))
+
+    def unusedLetters(self) -> list[chr]:
+        return [letter for letter in self.letterWeights if self.letterWeights[letter] > 0]
 
     def queryOnSubstring(self, substring: str) -> str:
         

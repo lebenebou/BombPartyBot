@@ -5,6 +5,7 @@ sys.path.append("./Engines")
 
 from Engines.Prioritizer import Prioritizer
 from Engines.SubstringMapper import SubstringMapper
+from Engines.BasicEngine import BasicEngine
 
 if __name__=="__main__":
 
@@ -15,12 +16,21 @@ if __name__=="__main__":
     with open(WORDS_FILE) as f:
         words = f.read().splitlines()
 
-    prioritizer = Prioritizer(words, lambda word : print(f"Prioritizer found word: {word}"))
-    prioritizer.queryOnSubstring("fr")
+    callback = lambda word : print(f"Found word: {word}")
+    substring = "au"
+
+    prioritizer = Prioritizer(words, callback)
+    prioritizer.queryOnSubstring(substring)
     print(f"Found in {prioritizer.lastResponseTimeMs} ms")
 
     print()
 
-    mapper = SubstringMapper(words, lambda word : print(f"Mapper found word: {word}"))
-    mapper.queryOnSubstring("fr")
+    mapper = SubstringMapper(words, callback)
+    mapper.queryOnSubstring(substring)
+    print(f"Found in {mapper.lastResponseTimeMs} ms")
+
+    print()
+
+    basic = BasicEngine(words, callback)
+    mapper.queryOnSubstring(substring)
     print(f"Found in {mapper.lastResponseTimeMs} ms")

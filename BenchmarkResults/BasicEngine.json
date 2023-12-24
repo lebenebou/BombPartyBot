@@ -1,0 +1,576 @@
+[
+    {
+        "turn": 1,
+        "queriedSubstring": "ti",
+        "foundWord": "hyperfastidious",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "c",
+            "g",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "q",
+            "v",
+            "w"
+        ]
+    },
+    {
+        "turn": 2,
+        "queriedSubstring": "ese",
+        "foundWord": "electrophoresed",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "g",
+            "j",
+            "k",
+            "m",
+            "n",
+            "q",
+            "v",
+            "w"
+        ]
+    },
+    {
+        "turn": 3,
+        "queriedSubstring": "el",
+        "foundWord": "goodfellowship",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "k",
+            "m",
+            "n",
+            "q",
+            "v"
+        ]
+    },
+    {
+        "turn": 4,
+        "queriedSubstring": "erm",
+        "foundWord": "sportfisherman",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "k",
+            "q",
+            "v"
+        ]
+    },
+    {
+        "turn": 5,
+        "queriedSubstring": "oat",
+        "foundWord": "loathfulness",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "k",
+            "q",
+            "v"
+        ]
+    },
+    {
+        "turn": 6,
+        "queriedSubstring": "pic",
+        "foundWord": "fingerpicked",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "q",
+            "v"
+        ]
+    },
+    {
+        "turn": 7,
+        "queriedSubstring": "eu",
+        "foundWord": "hydropneumatic",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "q",
+            "v"
+        ]
+    },
+    {
+        "turn": 8,
+        "queriedSubstring": "ro",
+        "foundWord": "weatherproofed",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "q",
+            "v"
+        ]
+    },
+    {
+        "turn": 9,
+        "queriedSubstring": "nes",
+        "foundWord": "worshipfulness",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "q",
+            "v"
+        ]
+    },
+    {
+        "turn": 10,
+        "queriedSubstring": "pri",
+        "foundWord": "sprightfulness",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "q",
+            "v"
+        ]
+    },
+    {
+        "turn": 11,
+        "queriedSubstring": "ide",
+        "foundWord": "sesquisulphide",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 12,
+        "queriedSubstring": "er",
+        "foundWord": "showerproofed",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 13,
+        "queriedSubstring": "nd",
+        "foundWord": "pathfinders",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 14,
+        "queriedSubstring": "led",
+        "foundWord": "pinwheeled",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "b",
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 15,
+        "queriedSubstring": "et",
+        "foundWord": "alphabetiform",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 16,
+        "queriedSubstring": "ela",
+        "foundWord": "prelaunched",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 17,
+        "queriedSubstring": "ise",
+        "foundWord": "lymphadenitises",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 18,
+        "queriedSubstring": "uri",
+        "foundWord": "desulphuring",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 19,
+        "queriedSubstring": "te",
+        "foundWord": "hyperinflated",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 20,
+        "queriedSubstring": "enn",
+        "foundWord": "halfpennyworths",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 21,
+        "queriedSubstring": "in",
+        "foundWord": "pathfinder",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 22,
+        "queriedSubstring": "pi",
+        "foundWord": "pitchforked",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 23,
+        "queriedSubstring": "to",
+        "foundWord": "photofloods",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 24,
+        "queriedSubstring": "od",
+        "foundWord": "goodfellowships",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 25,
+        "queriedSubstring": "rd",
+        "foundWord": "thenceforwards",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 26,
+        "queriedSubstring": "mi",
+        "foundWord": "phenformins",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 27,
+        "queriedSubstring": "er",
+        "foundWord": "flapperhoods",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 28,
+        "queriedSubstring": "men",
+        "foundWord": "sportfishermen",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 29,
+        "queriedSubstring": "ort",
+        "foundWord": "halfpennyworth",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 30,
+        "queriedSubstring": "re",
+        "foundWord": "preflighted",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 31,
+        "queriedSubstring": "pol",
+        "foundWord": "fishpole",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 32,
+        "queriedSubstring": "tes",
+        "foundWord": "fishplates",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 33,
+        "queriedSubstring": "ly",
+        "foundWord": "worshipfully",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 34,
+        "queriedSubstring": "olo",
+        "foundWord": "hyperboloidal",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 35,
+        "queriedSubstring": "lay",
+        "foundWord": "handplays",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 36,
+        "queriedSubstring": "ref",
+        "foundWord": "hyperefficient",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 37,
+        "queriedSubstring": "bin",
+        "foundWord": "hopbinds",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 38,
+        "queriedSubstring": "un",
+        "foundWord": "unfriendship",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 39,
+        "queriedSubstring": "ome",
+        "foundWord": "diaphanometers",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 40,
+        "queriedSubstring": "rea",
+        "foundWord": "preachified",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    },
+    {
+        "turn": 41,
+        "queriedSubstring": "end",
+        "foundWord": "spendthrift",
+        "responseTimeMs": 0.0,
+        "hearts": 3,
+        "lostHearts": 0,
+        "refillCount": 0,
+        "unusedLetters": [
+            "j",
+            "v"
+        ]
+    }
+]

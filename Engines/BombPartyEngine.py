@@ -43,9 +43,6 @@ class BombPartyEngine:
         self.lastResponseTimeMs: float = 0
 
 
-    def averageTurnsPerRefill(self) -> float:
-        return self.turnsPlayed / self.heartRefills
-
     def queryOnSubstring(self, substring: str) -> str:
         
         timerStart = time.time()
@@ -68,6 +65,9 @@ class BombPartyEngine:
 
             return None
 
+        for letter in foundWord:
+            self.letterWeights[letter] = 0
+
         if self._allLettersAreUsed():
 
             self.hearts = min(self.hearts + 1, self.maxHearts)
@@ -81,9 +81,11 @@ class BombPartyEngine:
 
         return {
             "turn": self.turnsPlayed,
-            "lastQueriedSubstring": self.lastQueriedSubstring,
-            "lastFoundWord": self.lastFoundWord,
+            "queriedSubstring": self.lastQueriedSubstring,
+            "foundWord": self.lastFoundWord,
+            "responseTimeMs": self.lastResponseTimeMs,
             "hearts": self.hearts,
+            "lostHearts": self.lostHearts,
             "refillCount": self.heartRefills,
             "unusedLetters": [letter for letter in self.letterWeights if self.letterWeights[letter] > 0],
         }
@@ -97,7 +99,7 @@ class BombPartyEngine:
         return not any(self.letterWeights.values())
 
     def _resetLetterWeights(self):
-        self.letterWeights = self.originalLetterWeights
+        self.letterWeights = self.originalLetterWeights.copy()
 
     def _quickFind(self, subtring: str) -> str:
         raise NotImplementedError("This is a virtual method. Please override it.")

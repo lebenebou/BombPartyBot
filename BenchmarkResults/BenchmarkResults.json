@@ -1,0 +1,26 @@
+[
+    {
+        "engine": "Prioritizer",
+        "turnsPlayed": 41,
+        "heartsLost": 0,
+        "heartRefills": 8,
+        "averageTurnsPerRefill": 5.125,
+        "averageResponseTimeMs": 0.04998067530190072
+    },
+    {
+        "engine": "SubstringMapper",
+        "turnsPlayed": 41,
+        "heartsLost": 0,
+        "heartRefills": 8,
+        "averageTurnsPerRefill": 5.125,
+        "averageResponseTimeMs": 11.798759786094108
+    },
+    {
+        "engine": "BasicEngine",
+        "turnsPlayed": 41,
+        "heartsLost": 0,
+        "heartRefills": 0,
+        "averageTurnsPerRefill": 41,
+        "averageResponseTimeMs": 0.0
+    }
+]

@@ -5,7 +5,6 @@ import os
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 SUBSTRINGS_FOLDER = os.path.join(CURRENT_DIR, "..", "Wordbank", "Substrings")
 
-
 class SubstringMapper(BombPartyEngine):
 
 # PUBLIC
@@ -29,18 +28,4 @@ class SubstringMapper(BombPartyEngine):
         with open(filePath) as f:
             candidates = f.read().splitlines()
 
-        maxValue = 0
-        argMax: str = None
-
-        for word in candidates:
-
-            if word in self.usedWords:
-                continue
-
-            value = self._assignValue(word)
-
-            if value > maxValue:
-                maxValue = value
-                argMax = word
-
-        return argMax
+        return max(candidates, key = lambda word : 0 if word in self.usedWords else self._assignValue(word))

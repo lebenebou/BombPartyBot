@@ -21,7 +21,7 @@ class BombPartyEngine:
 
         self.acceptedWords: list[str] = acceptedWords
 
-        if(letterWeights == None):
+        if(letterWeights is None):
             self.letterWeights:dict[chr, int] = getDefaultLetterWeights()
         else:
             self.letterWeights:dict[chr, int] = letterWeights
@@ -42,6 +42,10 @@ class BombPartyEngine:
         self.lastQueriedSubstring: str = None
         self.lastResponseTimeMs: float = 0
 
+        self._initialState = self.__dict__.copy()
+
+    def reset(self):
+        self.__dict__ = self._initialState.copy()
 
     def queryOnSubstring(self, substring: str) -> str:
         

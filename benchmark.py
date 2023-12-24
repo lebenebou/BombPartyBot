@@ -7,7 +7,7 @@ CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 BENCHMARK_FOLDER = os.path.join(CURRENT_DIR, "BenchmarkResults")
 
 import json
-from pprint import pprint
+from random import shuffle
 
 from Engines.BombPartyEngine import BombPartyEngine
 from Engines.Prioritizer import Prioritizer
@@ -35,7 +35,7 @@ def benchmarkEngine(engine: BombPartyEngine, substrings: list[str], jsonSaveFold
         "turnsPlayed": turnsPlayed,
         "heartsLost": engine.lostHearts,
         "heartRefills": engine.heartRefills,
-        "averageTurnsPerRefill": turnsPlayed if not engine.heartRefills else turnsPlayed / engine.heartRefills,
+        "averageTurnsPerRefill": -1 if not engine.heartRefills else turnsPlayed / engine.heartRefills,
         "averageResponseTimeMs": sum([turn["responseTimeMs"] for turn in gameLog]) / turnsPlayed,
     }
 
@@ -58,12 +58,15 @@ if __name__ == "__main__":
     basic = BasicEngine(words, foundWordCallback, gameOverCallback)
 
     substrings = ["ti", "ese", "el", "erm", "oat", "pic", "eu", "ro", "nes", "pri", "ide", "er", "nd", "led", "et", "ela", "ise", "uri", "te", "enn", "in", "pi", "to", "od", "rd", "mi", "er", "men", "ort", "re", "pol", "tes", "ly", "olo", "lay", "ref", "bin", "un", "ome", "rea", "end"]
+    shuffle(substrings)
 
     engineLogs = []
 
     engineLogs.append(benchmarkEngine(prioritizer, substrings))
     engineLogs.append(benchmarkEngine(mapper, substrings))
     engineLogs.append(benchmarkEngine(basic, substrings))
+
+    engineLogs.append({"substringSequence:": substrings})
 
     benchmarkResultsFileName = "BenchmarkResults.json"
     benchmarkResultsFilePath = os.path.join(BENCHMARK_FOLDER, benchmarkResultsFileName)
@@ -73,6 +76,3 @@ if __name__ == "__main__":
 
     print()
     print(f"Saved benchmark results to {benchmarkResultsFilePath}")
-
-    print()
-    print(f"The fastest engine is {min(engineLogs, key = lambda engineLog : engineLog['averageResponseTimeMs'])['engine']}")

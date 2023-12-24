@@ -3,24 +3,69 @@
         "engine": "Prioritizer",
         "turnsPlayed": 41,
         "heartsLost": 0,
-        "heartRefills": 8,
-        "averageTurnsPerRefill": 5.125,
-        "averageResponseTimeMs": 0.04998067530190072
+        "heartRefills": 9,
+        "averageTurnsPerRefill": 4.555555555555555,
+        "averageResponseTimeMs": 0.03874592664765149
     },
     {
         "engine": "SubstringMapper",
         "turnsPlayed": 41,
         "heartsLost": 0,
-        "heartRefills": 8,
-        "averageTurnsPerRefill": 5.125,
-        "averageResponseTimeMs": 11.798759786094108
+        "heartRefills": 9,
+        "averageTurnsPerRefill": 4.555555555555555,
+        "averageResponseTimeMs": 11.957546559775748
     },
     {
         "engine": "BasicEngine",
         "turnsPlayed": 41,
         "heartsLost": 0,
-        "heartRefills": 0,
-        "averageTurnsPerRefill": 41,
-        "averageResponseTimeMs": 0.0
+        "heartRefills": 1,
+        "averageTurnsPerRefill": 41.0,
+        "averageResponseTimeMs": 0.050207463706411964
+    },
+    {
+        "substringSequence:": [
+            "oat",
+            "pi",
+            "un",
+            "ise",
+            "to",
+            "rd",
+            "ro",
+            "te",
+            "ome",
+            "ref",
+            "pol",
+            "ort",
+            "olo",
+            "rea",
+            "et",
+            "ela",
+            "el",
+            "er",
+            "re",
+            "ese",
+            "enn",
+            "bin",
+            "uri",
+            "ly",
+            "ide",
+            "men",
+            "ti",
+            "pic",
+            "od",
+            "pri",
+            "mi",
+            "in",
+            "erm",
+            "nes",
+            "led",
+            "nd",
+            "er",
+            "end",
+            "eu",
+            "lay",
+            "tes"
+        ]
     }
 ]

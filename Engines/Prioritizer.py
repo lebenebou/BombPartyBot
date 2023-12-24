@@ -12,17 +12,6 @@ class Prioritizer(BombPartyEngine):
         
 # PROTECTED
     # Override
-    def _rebalance(self):
-
-        if self.lastFoundWordIndex != -1:
-            self.acceptedWords[self.lastFoundWordIndex] = ""
-
-        self.acceptedWords.sort(key=lambda word: self._assignValue(word), reverse=True)
-        
-        while len(self.acceptedWords) > 0 and self.acceptedWords[-1] == "":
-            self.acceptedWords.pop()
-
-    # Override
     def _quickFind(self, substring: str) -> str:
 
         for index, word in enumerate(self.acceptedWords):
@@ -34,3 +23,14 @@ class Prioritizer(BombPartyEngine):
             return word
 
         return None
+
+    # Override
+    def _rebalance(self):
+
+        if self.lastFoundWordIndex != -1:
+            self.acceptedWords[self.lastFoundWordIndex] = ""
+
+        self.acceptedWords.sort(key=lambda word: self._assignValue(word), reverse=True)
+        
+        while len(self.acceptedWords) > 0 and self.acceptedWords[-1] == "":
+            self.acceptedWords.pop()

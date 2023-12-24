@@ -5,11 +5,11 @@ import os
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 SUBSTRINGS_FOLDER = os.path.join(CURRENT_DIR, "..", "Wordbank", "Substrings")
 
-class SubstringMapper(BombPartyEngine):
+class BasicEngine(BombPartyEngine):
 
 # PUBLIC
-    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
-
+    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable ,letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
+        
         super().__init__(acceptedWords, foundWordCallback, gameOverCallback, letterWeights, startingHearts, maxHearts)
         self.usedWords = set()
         
@@ -17,14 +17,12 @@ class SubstringMapper(BombPartyEngine):
     # Override
     def _quickFind(self, substring: str) -> str:
 
-        fileName = substring + ".txt"
-        filePath = os.path.join(SUBSTRINGS_FOLDER, fileName)
+        for word in self.acceptedWords:
 
-        candidates = []
-        with open(filePath) as f:
-            candidates = f.read().splitlines()
+            if substring in word and not self.__isAlreadyUsed(word):
+                return word
 
-        return max(candidates, key = lambda word : 0 if self.__isAlreadyUsed(word) else self._assignValue(word))
+        return None
 
     # Override
     def _rebalance(self):

@@ -10,6 +10,7 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_WEIGHTS_FILE = os.path.join(CURRENT_DIR, "defaultLetterWeights.json")
 
 import json
+
 def getDefaultLetterWeights() -> dict[chr, int]:
 
     with open(DEFAULT_WEIGHTS_FILE) as f:
@@ -18,7 +19,7 @@ def getDefaultLetterWeights() -> dict[chr, int]:
 class BombPartyEngine:
 
 # PUBLIC
-    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = lambda word: None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
+    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
 
         self.acceptedWords: list[str] = acceptedWords
 
@@ -51,6 +52,28 @@ class BombPartyEngine:
     def unusedLetters(self) -> list[chr]:
         return [letter for letter in self.letterWeights if self.letterWeights[letter] > 0]
 
+    def useLetters(self, letters: list[chr]):
+
+        for letter in letters:
+            self.letterWeights[letter] = 0
+
+    def unuseLastWord(self):
+
+        if self.lastFoundWord is None:
+            return
+
+        for letter in self.lastFoundWord:
+            self.letterWeights[letter] += 1
+
+    def setLettersLeft(self, letters: list[chr]):
+
+        self._resetLetterWeights()
+
+        for letter in self.letterWeights.keys():
+
+            if letter not in letters:
+                self.letterWeights[letter] = 0
+
     def queryOnSubstring(self, substring: str) -> str:
         
         timerStart = time.time()
@@ -73,8 +96,7 @@ class BombPartyEngine:
 
             return None
 
-        for letter in foundWord:
-            self.letterWeights[letter] = 0
+        self.useLetters(list(foundWord))
 
         if self._allLettersAreUsed():
 

@@ -45,7 +45,7 @@ if __name__ == "__main__":
         os.mkdir(BENCHMARK_FOLDER)
 
     foundWordCallback = lambda word : None
-    gameOverCallback = lambda word : None
+    gameOverCallback = None
 
     WORDS_FILE = os.path.join(CURRENT_DIR, "WordBank", "BombPartyDictionary.txt")
 

@@ -4,7 +4,7 @@ from BombPartyEngine import BombPartyEngine
 class Prioritizer(BombPartyEngine):
 
 # PUBLIC
-    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = lambda word: None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
+    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
 
         super().__init__(acceptedWords, foundWordCallback, gameOverCallback, letterWeights, startingHearts, maxHearts)
 

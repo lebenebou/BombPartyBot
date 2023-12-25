@@ -19,7 +19,7 @@ def getDefaultLetterWeights() -> dict[chr, int]:
 class BombPartyEngine:
 
 # PUBLIC
-    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
+    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = None, letterWeights: dict[chr, int] = None, startingHearts: int = 2, maxHearts: int = 3):
 
         self.acceptedWords: list[str] = acceptedWords
 

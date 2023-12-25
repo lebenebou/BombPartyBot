@@ -21,8 +21,13 @@ def FocusChromeAndInputWord(word: str):
 def safeExit():
     exit(0)
 
-def markAsInvalid(word: str):
-    pass
+def getValueFromInput(intputMessage: str) -> any:
+    
+    intputMessage = intputMessage.strip().strip(":") + ": "
+    os.system("cls")
+
+    value = input(intputMessage).strip().lower()
+    return value
 
 def handleCommand(command: str, engine: BombPartyEngine):
 
@@ -36,38 +41,37 @@ def handleCommand(command: str, engine: BombPartyEngine):
         engine.reset()
         return
 
-    elif command == "i":
-        markAsInvalid(engine.lastFoundWord)
+    elif command == "h":
+        engine.hearts = int(getValueFromInput(intputMessage="Set heart count"))
         return
 
-    elif command.startswith("h"):
-        engine.hearts = int(command[1])
+    elif command == "m":
+        engine.maxHearts = int(getValueFromInput(intputMessage="Set max heart count")) 
         return
 
-    elif command.startswith("m"):
-        engine.maxHearts = int(command[1])
+    elif command == "l":
+
+        letters = str(getValueFromInput(intputMessage="Set letters left"))
+        engine.setLettersLeft(list(letters))
         return
 
-    elif command.startswith("l"):
-        engine.setLettersLeft(list(command[1:]))
+    elif command == "u":
+
+        letters = str(getValueFromInput(intputMessage="letters to use up"))
+        engine.useLetters(list(letters))
         return
 
-    elif command.startswith("u"):
-        engine.useLetters(list(command[1:]))
-        return
-
-    elif command.startswith("z"):
+    elif command == "z":
         engine.unuseLastWord()
         return
 
-def showEngineInfo(engine: BombPartyEngine):
+def showMainScreen(engine: BombPartyEngine):
 
     if engine.lastFoundWord is not None:
-        print(f"Found word: {engine.lastFoundWord}", end="\n\n")
+        print(f"Last found word: {engine.lastFoundWord}", end="\n\n")
 
     print("(:r) reset")
     print("(:z) unuse last word")
-    print("(:i) last word is invalid")
     print("(:u) use letters")
     print("(:l) set letters left")
     print()
@@ -93,7 +97,7 @@ if __name__=="__main__":
 
         os.system("cls")
 
-        showEngineInfo(engine)
+        showMainScreen(engine)
 
         substring = input("Enter substring or command: ").strip().lower()
 

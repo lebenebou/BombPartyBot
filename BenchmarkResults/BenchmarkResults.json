@@ -5,7 +5,7 @@
         "heartsLost": 0,
         "heartRefills": 9,
         "averageTurnsPerRefill": 4.555555555555555,
-        "averageResponseTimeMs": 0.03874592664765149
+        "averageResponseTimeMs": 0.16600329701493427
     },
     {
         "engine": "SubstringMapper",
@@ -13,59 +13,14 @@
         "heartsLost": 0,
         "heartRefills": 9,
         "averageTurnsPerRefill": 4.555555555555555,
-        "averageResponseTimeMs": 11.957546559775748
+        "averageResponseTimeMs": 13.566610289783013
     },
     {
         "engine": "BasicEngine",
         "turnsPlayed": 41,
         "heartsLost": 0,
-        "heartRefills": 1,
-        "averageTurnsPerRefill": 41.0,
-        "averageResponseTimeMs": 0.050207463706411964
-    },
-    {
-        "substringSequence:": [
-            "oat",
-            "pi",
-            "un",
-            "ise",
-            "to",
-            "rd",
-            "ro",
-            "te",
-            "ome",
-            "ref",
-            "pol",
-            "ort",
-            "olo",
-            "rea",
-            "et",
-            "ela",
-            "el",
-            "er",
-            "re",
-            "ese",
-            "enn",
-            "bin",
-            "uri",
-            "ly",
-            "ide",
-            "men",
-            "ti",
-            "pic",
-            "od",
-            "pri",
-            "mi",
-            "in",
-            "erm",
-            "nes",
-            "led",
-            "nd",
-            "er",
-            "end",
-            "eu",
-            "lay",
-            "tes"
-        ]
+        "heartRefills": 0,
+        "averageTurnsPerRefill": -1,
+        "averageResponseTimeMs": 0.02374881651343369
     }
 ]

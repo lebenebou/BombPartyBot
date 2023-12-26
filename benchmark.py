@@ -53,20 +53,19 @@ if __name__ == "__main__":
     with open(WORDS_FILE) as f:
         words = f.read().splitlines()
 
-    prioritizer = Prioritizer(words, foundWordCallback, gameOverCallback)
-    mapper = SubstringMapper(words, foundWordCallback, gameOverCallback)
-    basic = BasicEngine(words, foundWordCallback, gameOverCallback)
-
     substrings = ["ti", "ese", "el", "erm", "oat", "pic", "eu", "ro", "nes", "pri", "ide", "er", "nd", "led", "et", "ela", "ise", "uri", "te", "enn", "in", "pi", "to", "od", "rd", "mi", "er", "men", "ort", "re", "pol", "tes", "ly", "olo", "lay", "ref", "bin", "un", "ome", "rea", "end"]
     shuffle(substrings)
+    iterations = len(substrings)
+
+    prioritizer = Prioritizer(words, foundWordCallback, maxHearts=iterations)
+    mapper = SubstringMapper(words, foundWordCallback, maxHearts=iterations)
+    basic = BasicEngine(words, foundWordCallback, maxHearts=iterations)
 
     engineLogs = []
 
     engineLogs.append(benchmarkEngine(prioritizer, substrings))
     engineLogs.append(benchmarkEngine(mapper, substrings))
     engineLogs.append(benchmarkEngine(basic, substrings))
-
-    engineLogs.append({"substringSequence:": substrings})
 
     benchmarkResultsFileName = "BenchmarkResults.json"
     benchmarkResultsFilePath = os.path.join(BENCHMARK_FOLDER, benchmarkResultsFileName)

@@ -8,6 +8,10 @@ from Engines.Prioritizer import Prioritizer
 
 import pyautogui
 
+def doNothing(word: str):
+
+    pass
+
 def FocusChromeAndInputWord(word: str):
 
     if word is None:
@@ -38,6 +42,9 @@ def handleCommand(command: str, engine: BombPartyEngine):
         return
 
     elif command == "r":
+
+        os.system("cls")
+        print("Resetting...")
         engine.reset()
         return
 
@@ -101,7 +108,7 @@ if __name__=="__main__":
 
         showMainScreen(engine)
 
-        substring = input("Enter substring or command: ").strip().lower()
+        substring = input("Enter substring or command: ").replace(" ", "").lower()
 
         if substring.startswith(":"):
 

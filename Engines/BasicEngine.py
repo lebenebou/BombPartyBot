@@ -8,7 +8,7 @@ SUBSTRINGS_FOLDER = os.path.join(CURRENT_DIR, "..", "Wordbank", "Substrings")
 class BasicEngine(BombPartyEngine):
 
 # PUBLIC
-    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback = None, letterWeights: dict[chr, int] = None, startingHearts: int = 3, maxHearts: int = 3):
+    def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback = None, letterWeights: dict[chr, int] = None, startingHearts: int = 2, maxHearts: int = 3):
         
         super().__init__(acceptedWords, foundWordCallback, gameOverCallback, letterWeights, startingHearts, maxHearts)
         self.usedWords = set()

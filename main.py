@@ -70,12 +70,14 @@ def showMainScreen(engine: BombPartyEngine):
     if engine.lastFoundWord is not None:
         print(f"Last found word: {engine.lastFoundWord}", end="\n\n")
 
+    print("Commands:")
     print("(:r) reset")
     print("(:z) unuse last word")
     print("(:u) use letters")
     print("(:l) set letters left")
+
     print()
-    print("\t", "".join(engine.unusedLetters()))
+    print("\t", " ".join(engine.unusedLetters()))
     print()
 
     print(f"Hearts: {engine.hearts}", "\t(:h) set")

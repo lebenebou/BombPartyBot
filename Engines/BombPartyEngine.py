@@ -49,22 +49,26 @@ class BombPartyEngine:
     def reset(self):
         self.__dict__.update(deepcopy(self._initialState))
 
+    # Final
     def unusedLetters(self) -> list[chr]:
         return [letter for letter in self.letterWeights if self.letterWeights[letter] > 0]
 
+    # Final
     def useLetters(self, letters: list[chr]):
 
         for letter in letters:
             self.letterWeights[letter] = 0
 
+    # Final
     def unuseLastWord(self):
 
         if self.lastFoundWord is None:
             return
 
         for letter in self.lastFoundWord:
-            self.letterWeights[letter] += 1
+            self.letterWeights[letter] = 1
 
+    # Final
     def setLettersLeft(self, letters: list[chr]):
 
         self._resetLetterWeights()
@@ -74,6 +78,7 @@ class BombPartyEngine:
             if letter not in letters:
                 self.letterWeights[letter] = 0
 
+    # Final
     def queryOnSubstring(self, substring: str) -> str:
         
         timerStart = time.time()
@@ -107,6 +112,7 @@ class BombPartyEngine:
         self._rebalance()
         return foundWord
 
+    # Final
     def toDict(self) -> dict:
 
         return {

@@ -11,7 +11,7 @@ class SubstringMapper(BombPartyEngine):
     def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = None, letterWeights: dict[chr, int] = None, startingHearts: int = 2, maxHearts: int = 3):
 
         super().__init__(acceptedWords, foundWordCallback, gameOverCallback, letterWeights, startingHearts, maxHearts)
-        self.usedWords = set()
+        self.usedWords: list[str] = []
         
     # Override
     def reset(self):
@@ -30,11 +30,21 @@ class SubstringMapper(BombPartyEngine):
         with open(filePath) as f:
             candidates = f.read().splitlines()
 
-        return max(candidates, key = lambda word : 0 if self.__isAlreadyUsed(word) else self._assignValue(word))
+        if self.hearts < self.maxHearts:
+            return max(candidates, key = lambda word : 0 if self.__isAlreadyUsed(word) else self._assignValue(word))
+
+        for candidate in candidates:
+
+            if self.__isAlreadyUsed(candidate):
+                continue
+
+            return candidate
+
+        return None
 
     # Override
     def _rebalance(self):
-        self.usedWords.add(self.lastFoundWord)
+        self.usedWords.append(self.lastFoundWord)
 
 # PRIVATE
     def __isAlreadyUsed(self, word: str) -> bool:

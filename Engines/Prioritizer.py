@@ -19,21 +19,21 @@ class Prioritizer(BombPartyEngine):
     # Override
     def _quickFind(self, substring: str) -> str:
 
-        index, increment = 0, 1
+        if len(self.acceptedWords) == 0:
+            return None
 
-        if self.hearts == self.maxHearts:
-            index, increment = -1, -1
+        wordsIterator = enumerate(self.acceptedWords)
 
-        while abs(index) <= len(self.acceptedWords):
+        if self.hearts >= self.maxHearts:
+            wordsIterator = reversed(list(wordsIterator))
 
-            word = self.acceptedWords[index]
+        for index, word in wordsIterator:
 
-            if substring in word:
+            if substring not in word:
+                continue
 
-                self.acceptedWords[index] = ""
-                return word
-
-            index += increment
+            self.acceptedWords[index] = ""
+            return word
 
         return None
 

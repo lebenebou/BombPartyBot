@@ -23,7 +23,7 @@ def benchmarkEngine(engine: BombPartyEngine, substrings: list[str], jsonSaveFold
         engine.queryOnSubstring(substring)
         gameLog.append(engine.toDict())
 
-    jsonFilePath = os.path.join(jsonSaveFolder, f"{engine.__class__.__name__}.json")
+    jsonFilePath = os.path.join(jsonSaveFolder, f"{engine.__class__.__name__}Gamelog.json")
     with open(jsonFilePath, "w") as f:
         json.dump(gameLog, f, indent=4)
     print(f"Saved game log to {jsonFilePath}")
@@ -61,6 +61,7 @@ if __name__ == "__main__":
     mapper = SubstringMapper(words, foundWordCallback, maxHearts=iterations)
     basic = BasicEngine(words, foundWordCallback, maxHearts=iterations)
 
+    print("Benchmarking...", flush=True)
     engineLogs = []
 
     engineLogs.append(benchmarkEngine(prioritizer, substrings))

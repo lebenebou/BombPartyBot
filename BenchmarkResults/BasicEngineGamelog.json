@@ -1,569 +1,621 @@
 [
     {
         "turn": 1,
-        "queriedSubstring": "mi",
-        "foundWord": "blacksmithing",
+        "queriedSubstring": "er",
+        "foundWord": "overemphasised",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
-            "e",
+            "b",
+            "c",
             "f",
+            "g",
             "j",
-            "o",
-            "p",
+            "k",
+            "l",
+            "n",
             "q",
-            "r",
+            "t",
             "u",
-            "v",
             "w",
             "y"
         ]
     },
     {
         "turn": 2,
-        "queriedSubstring": "ro",
-        "foundWord": "cockthrowings",
+        "queriedSubstring": "er",
+        "foundWord": "overemphasized",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
-            "e",
+            "b",
+            "c",
             "f",
+            "g",
             "j",
-            "p",
+            "k",
+            "l",
+            "n",
             "q",
+            "t",
             "u",
-            "v",
+            "w",
             "y"
         ]
     },
     {
         "turn": 3,
-        "queriedSubstring": "olo",
-        "foundWord": "colourwashing",
+        "queriedSubstring": "eu",
+        "foundWord": "pneumathodes",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
-            "e",
+            "b",
+            "c",
             "f",
+            "g",
             "j",
-            "p",
+            "k",
+            "l",
             "q",
-            "v",
+            "w",
             "y"
         ]
     },
     {
         "turn": 4,
-        "queriedSubstring": "ort",
-        "foundWord": "cringeworthy",
+        "queriedSubstring": "bin",
+        "foundWord": "divebombing",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
+            "c",
             "f",
             "j",
-            "p",
+            "k",
+            "l",
             "q",
-            "v"
+            "w",
+            "y"
         ]
     },
     {
         "turn": 5,
-        "queriedSubstring": "ref",
-        "foundWord": "reflectography",
+        "queriedSubstring": "men",
+        "foundWord": "dishevelment",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
+            "c",
+            "f",
             "j",
+            "k",
             "q",
-            "v"
+            "w",
+            "y"
         ]
     },
     {
         "turn": 6,
-        "queriedSubstring": "ese",
-        "foundWord": "cheesewring",
+        "queriedSubstring": "tes",
+        "foundWord": "dermatophytes",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
+            "c",
+            "f",
             "j",
+            "k",
             "q",
-            "v"
+            "w"
         ]
     },
     {
         "turn": 7,
-        "queriedSubstring": "ly",
-        "foundWord": "shockingly",
+        "queriedSubstring": "pi",
+        "foundWord": "hydrotropism",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
+            "c",
+            "f",
             "j",
+            "k",
             "q",
-            "v"
+            "w"
         ]
     },
     {
         "turn": 8,
-        "queriedSubstring": "re",
-        "foundWord": "shipwrecking",
+        "queriedSubstring": "enn",
+        "foundWord": "quadrenniums",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
+            "c",
+            "f",
             "j",
-            "q",
-            "v"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 9,
-        "queriedSubstring": "erm",
-        "foundWord": "overmatching",
+        "queriedSubstring": "end",
+        "foundWord": "endolymphatic",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
+            "f",
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 10,
-        "queriedSubstring": "ise",
-        "foundWord": "wisecracking",
-        "responseTimeMs": 0.9737014770507812,
+        "queriedSubstring": "oat",
+        "foundWord": "dimethoates",
+        "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
+            "f",
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 11,
-        "queriedSubstring": "nes",
-        "foundWord": "shockingness",
+        "queriedSubstring": "ort",
+        "foundWord": "orthodromics",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
+            "f",
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 12,
-        "queriedSubstring": "pol",
-        "foundWord": "polychroming",
+        "queriedSubstring": "nes",
+        "foundWord": "shamefacedness",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 13,
-        "queriedSubstring": "in",
-        "foundWord": "patchworking",
+        "queriedSubstring": "ela",
+        "foundWord": "homelands",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "d",
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 14,
-        "queriedSubstring": "end",
-        "foundWord": "uncomprehending",
+        "queriedSubstring": "rd",
+        "foundWord": "rutherfordiums",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 15,
-        "queriedSubstring": "pri",
-        "foundWord": "watchspring",
+        "queriedSubstring": "ide",
+        "foundWord": "sulphacetamide",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 16,
-        "queriedSubstring": "er",
-        "foundWord": "weathercocking",
+        "queriedSubstring": "in",
+        "foundWord": "hindforemost",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 17,
-        "queriedSubstring": "et",
-        "foundWord": "bethwacking",
+        "queriedSubstring": "un",
+        "foundWord": "unfathomed",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 18,
-        "queriedSubstring": "un",
-        "foundWord": "keypunching",
+        "queriedSubstring": "ly",
+        "foundWord": "shamefacedly",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 19,
-        "queriedSubstring": "ela",
-        "foundWord": "coelanaglyphic",
+        "queriedSubstring": "te",
+        "foundWord": "hamfattered",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 20,
-        "queriedSubstring": "pic",
-        "foundWord": "handpicking",
+        "queriedSubstring": "ise",
+        "foundWord": "overhomogenised",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 21,
-        "queriedSubstring": "eu",
-        "foundWord": "chauffeusing",
+        "queriedSubstring": "to",
+        "foundWord": "pachydermatous",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 22,
-        "queriedSubstring": "to",
-        "foundWord": "kinematographic",
+        "queriedSubstring": "nd",
+        "foundWord": "handicraftsmen",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 23,
-        "queriedSubstring": "led",
-        "foundWord": "acknowledgeably",
+        "queriedSubstring": "ro",
+        "foundWord": "mothproofed",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 24,
-        "queriedSubstring": "ide",
-        "foundWord": "chalcogenides",
+        "queriedSubstring": "lay",
+        "foundWord": "underlayments",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 25,
-        "queriedSubstring": "men",
-        "foundWord": "acknowledgments",
+        "queriedSubstring": "el",
+        "foundWord": "overembellished",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 26,
-        "queriedSubstring": "ti",
-        "foundWord": "cockfightings",
+        "queriedSubstring": "ref",
+        "foundWord": "preformulated",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 27,
-        "queriedSubstring": "nd",
-        "foundWord": "rockhoundings",
+        "queriedSubstring": "led",
+        "foundWord": "rumbledethumps",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 28,
-        "queriedSubstring": "pi",
-        "foundWord": "pitchforking",
+        "queriedSubstring": "pol",
+        "foundWord": "polychromed",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 29,
-        "queriedSubstring": "uri",
-        "foundWord": "chauffeuring",
+        "queriedSubstring": "ome",
+        "foundWord": "fathomed",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 30,
-        "queriedSubstring": "ome",
-        "foundWord": "homeworkings",
+        "queriedSubstring": "uri",
+        "foundWord": "thermoduric",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 31,
-        "queriedSubstring": "od",
-        "foundWord": "bodychecking",
+        "queriedSubstring": "ti",
+        "foundWord": "victimhoods",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 32,
-        "queriedSubstring": "el",
-        "foundWord": "schnorkeling",
+        "queriedSubstring": "pri",
+        "foundWord": "deprivements",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 33,
-        "queriedSubstring": "rea",
-        "foundWord": "preachifyings",
+        "queriedSubstring": "olo",
+        "foundWord": "demythologising",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 34,
-        "queriedSubstring": "rd",
-        "foundWord": "birdwatching",
+        "queriedSubstring": "od",
+        "foundWord": "victimhood",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 35,
-        "queriedSubstring": "enn",
-        "foundWord": "pennyweights",
+        "queriedSubstring": "erm",
+        "foundWord": "overmatched",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
             "j",
-            "q"
+            "k",
+            "w"
         ]
     },
     {
         "turn": 36,
-        "queriedSubstring": "bin",
-        "foundWord": "stockjobbing",
+        "queriedSubstring": "ese",
+        "foundWord": "mesenchymatous",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "q"
+            "j",
+            "k",
+            "w"
         ]
     },
     {
         "turn": 37,
-        "queriedSubstring": "te",
-        "foundWord": "counterchecking",
+        "queriedSubstring": "mi",
+        "foundWord": "misbehaved",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "q"
+            "j",
+            "k",
+            "w"
         ]
     },
     {
         "turn": 38,
-        "queriedSubstring": "er",
-        "foundWord": "whickering",
+        "queriedSubstring": "pic",
+        "foundWord": "misanthropical",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "q"
+            "j",
+            "k",
+            "w"
         ]
     },
     {
         "turn": 39,
-        "queriedSubstring": "tes",
-        "foundWord": "zygobranchiates",
+        "queriedSubstring": "re",
+        "foundWord": "headforemost",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "q"
+            "j",
+            "k",
+            "w"
         ]
     },
     {
         "turn": 40,
-        "queriedSubstring": "oat",
-        "foundWord": "hoatching",
+        "queriedSubstring": "rea",
+        "foundWord": "threadworms",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "q"
+            "j",
+            "k"
         ]
     },
     {
         "turn": 41,
-        "queriedSubstring": "lay",
-        "foundWord": "bricklayings",
+        "queriedSubstring": "et",
+        "foundWord": "sulphacetamides",
         "responseTimeMs": 0.0,
         "hearts": 2,
         "lostHearts": 0,
         "refillCount": 0,
         "unusedLetters": [
-            "q"
+            "j",
+            "k"
         ]
     }
 ]

@@ -7,7 +7,7 @@ sys.path.append("..")
 
 import os
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_WEIGHTS_FILE = os.path.join(CURRENT_DIR, "defaultLetterWeights.json")
+DEFAULT_WEIGHTS_FILE = os.path.join(os.path.dirname(CURRENT_DIR), "WordBank", "defaultLetterWeights.json")
 
 import json
 

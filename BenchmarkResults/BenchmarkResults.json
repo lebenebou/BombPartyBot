@@ -3,17 +3,17 @@
         "engine": "Prioritizer",
         "turnsPlayed": 41,
         "heartsLost": 0,
-        "heartRefills": 8,
-        "averageTurnsPerRefill": 5.125,
-        "averageResponseTimeMs": 0.13538104731862138
+        "heartRefills": 9,
+        "averageTurnsPerRefill": 4.555555555555555,
+        "averageResponseTimeMs": 0.24412899482540967
     },
     {
         "engine": "SubstringMapper",
         "turnsPlayed": 41,
         "heartsLost": 0,
-        "heartRefills": 8,
-        "averageTurnsPerRefill": 5.125,
-        "averageResponseTimeMs": 14.480300065947741
+        "heartRefills": 9,
+        "averageTurnsPerRefill": 4.555555555555555,
+        "averageResponseTimeMs": 14.248138520775772
     },
     {
         "engine": "BasicEngine",
@@ -21,6 +21,6 @@
         "heartsLost": 0,
         "heartRefills": 0,
         "averageTurnsPerRefill": -1,
-        "averageResponseTimeMs": 0.0
+        "averageResponseTimeMs": 0.38113245149938074
     }
 ]

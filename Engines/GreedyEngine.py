@@ -5,46 +5,40 @@ import os
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 SUBSTRINGS_FOLDER = os.path.join(CURRENT_DIR, "..", "Wordbank", "Substrings")
 
-class SubstringMapper(BombPartyEngine):
+class GreedyEngine(BombPartyEngine):
 
 # PUBLIC
     def __init__(self, acceptedWords: list[str], foundWordCallback: callable, gameOverCallback: callable = None, letterWeights: dict[chr, int] = None, startingHearts: int = 2, maxHearts: int = 3):
 
         super().__init__(acceptedWords, foundWordCallback, gameOverCallback, letterWeights, startingHearts, maxHearts)
-        self.usedWords: list[str] = []
-        
+        self.usedWords = set()
+
     # Override
     def reset(self):
-
         super().reset()
-        self.usedWords.clear()
 
 # PROTECTED
     # Override
     def _quickFind(self, substring: str) -> str:
 
-        fileName = substring + ".txt"
-        filePath = os.path.join(SUBSTRINGS_FOLDER, fileName)
+        bestWord: str = None
+        bestScore: int = -1
 
-        candidates = []
-        with open(filePath) as f:
-            candidates = f.read().splitlines()
+        for word in self.acceptedWords:
 
-        if self.hearts < self.maxHearts:
-            return max(candidates, key = lambda word : 0 if self.__isAlreadyUsed(word) else self._assignValue(word))
-
-        for candidate in candidates:
-
-            if self.__isAlreadyUsed(candidate):
+            if self.__isAlreadyUsed(word) or substring not in word:
                 continue
 
-            return candidate
+            score = self._assignValue(word)
+            if score > bestScore:
+                bestWord = word
+                bestScore = score
 
-        return None
+        return bestWord
 
     # Override
     def _rebalance(self):
-        self.usedWords.append(self.lastFoundWord)
+        self.usedWords.add(self.lastFoundWord)
 
 # PRIVATE
     def __isAlreadyUsed(self, word: str) -> bool:

@@ -1,26 +1,26 @@
 [
     {
+        "engine": "BasicEngine",
+        "turnsPlayed": 41,
+        "heartsLost": 0,
+        "heartRefills": 2,
+        "averageTurnsPerRefill": 20.5,
+        "averageResponseTimeMs": 0.024347770504835175
+    },
+    {
+        "engine": "GreedyEngine",
+        "turnsPlayed": 41,
+        "heartsLost": 0,
+        "heartRefills": 9,
+        "averageTurnsPerRefill": 4.555555555555555,
+        "averageResponseTimeMs": 49.819667164872335
+    },
+    {
         "engine": "Prioritizer",
         "turnsPlayed": 41,
         "heartsLost": 0,
         "heartRefills": 9,
         "averageTurnsPerRefill": 4.555555555555555,
-        "averageResponseTimeMs": 0.24412899482540967
-    },
-    {
-        "engine": "SubstringMapper",
-        "turnsPlayed": 41,
-        "heartsLost": 0,
-        "heartRefills": 9,
-        "averageTurnsPerRefill": 4.555555555555555,
-        "averageResponseTimeMs": 14.248138520775772
-    },
-    {
-        "engine": "BasicEngine",
-        "turnsPlayed": 41,
-        "heartsLost": 0,
-        "heartRefills": 0,
-        "averageTurnsPerRefill": -1,
-        "averageResponseTimeMs": 0.38113245149938074
+        "averageResponseTimeMs": 0.04778838739162538
     }
 ]

@@ -10,9 +10,9 @@ import json
 from random import shuffle
 
 from Engines.BombPartyEngine import BombPartyEngine
-from Engines.Prioritizer import Prioritizer
-from Engines.SubstringMapper import SubstringMapper
 from Engines.BasicEngine import BasicEngine
+from Engines.GreedyEngine import GreedyEngine
+from Engines.Prioritizer import Prioritizer
     
 def benchmarkEngine(engine: BombPartyEngine, substrings: list[str], saveFolder: str = BENCHMARK_FOLDER) -> dict:
 
@@ -61,16 +61,16 @@ if __name__ == "__main__":
     shuffle(substrings)
     iterations = len(substrings)
 
-    prioritizer = Prioritizer(words, foundWordCallback, maxHearts=iterations)
-    mapper = SubstringMapper(words, foundWordCallback, maxHearts=iterations)
     basic = BasicEngine(words, foundWordCallback, maxHearts=iterations)
+    greedy = GreedyEngine(words, foundWordCallback, maxHearts=iterations)
+    prioritizer = Prioritizer(words, foundWordCallback, maxHearts=iterations)
 
     print("Benchmarking...", flush=True)
     engineLogs = []
 
-    engineLogs.append(benchmarkEngine(prioritizer, substrings))
-    engineLogs.append(benchmarkEngine(mapper, substrings))
     engineLogs.append(benchmarkEngine(basic, substrings))
+    engineLogs.append(benchmarkEngine(greedy, substrings))
+    engineLogs.append(benchmarkEngine(prioritizer, substrings))
 
     benchmarkResultsFileName = "BenchmarkResults.json"
     benchmarkResultsFilePath = os.path.join(BENCHMARK_FOLDER, benchmarkResultsFileName)
